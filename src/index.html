@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cryptocurrency Market</title>
+  <base href="/">
+
+  <meta name="description" content="A simple Progressive Web App using Angular 5 that tracks real-time cryptocurrency prices. Find your top favourite coins here, like Bitcoin, Ethereum, Ripple and more.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Crypto Market">
+  <meta name="application-name" content="Crypto Market">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg" color="#108ee9">
+
+  <style>
+    .splash {
+      opacity: 0;
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      padding-top: 25vh;
+      text-align: center;
+      z-index: -1;
+    }
+
+    app-root:empty+.splash {
+      opacity: 1;
+      z-index: 100;
+    }
+  </style>
+</head>
+
+<body>
+  <app-root></app-root>
+  <div class="splash" id="content">
+    <img src="/assets/icons/android-chrome-192x192.png" width="192px" alt="Cryptocurrency Market Logo">
+  </div>
+
+  <!-- No Script -->
+  <noscript>
+    <h3 style="color: #ff6060; font-family: Helvetica, Arial, sans-serif; text-align: center; margin: 2rem;">
+      Sorry, JavaScript must be enabled to use this app
+    </h3>
+  </noscript>
+  <!-- Web Fonts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+  <script>
+    WebFontConfig = {
+      google: {
+        families: ['Raleway:500,700']
+      },
+      timeout: 1500
+    };
+  </script>
+  <!-- Google Analytics -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-103790644-2', 'auto');
+  </script>
+  <!-- End Google Analytics -->
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- End Google Adsense -->
+</body>
+
+</html>

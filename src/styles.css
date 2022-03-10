@@ -1,0 +1,52 @@
+body {
+    background: #ffffff;
+    padding-bottom: 6rem;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+a {
+    cursor: pointer;
+}
+
+nz-layout, nz-header, nz-content,
+.ant-layout {
+    background: #fff !important;
+}
+
+nz-layout {
+    height: 100vh;
+}
+
+.ant-table {
+    font-size: 14px !important;
+}
+
+nz-tabs-nav {
+    border: none !important;
+}
+
+.ant-tabs-nav-wrap {
+    margin-bottom: 1em !important;
+}
+
+.ant-tabs-bar {
+    margin-bottom: 0 !important;
+}
+
+.ant-table-column-sorter-up, .ant-table-column-sorter-down {
+    line-height: 8px !important;
+    height: 8px !important;
+}
+
+:root .ant-table-column-sorter .anticon-caret-up,
+:root .ant-table-column-sorter .anticon-caret-down {
+    font-size: 13px !important;
+}
+
+@media all and (max-width: 479px) {
+    .ant-tabs-tab {
+        font-size: 12px !important;
+        margin-right: 6px !important;
+    }
+}

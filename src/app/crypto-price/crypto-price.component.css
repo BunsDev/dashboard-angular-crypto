@@ -1,0 +1,214 @@
+#header {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    height: 110px;
+    margin: 0 auto 18px auto;
+    padding-left: 1.1em;
+    padding-right: 1.1em;
+    width: 80%;
+}
+
+#logo {
+    float: left;
+    height: 80px;
+    line-height: 80px;
+}
+
+#logo span {
+    font-size: 2.4em;
+    font-family: Raleway,Hiragino Sans GB,sans-serif;
+    font-weight: bold;
+    height: 100px;
+    letter-spacing: .1em;
+    line-height: 100px;
+    color: #108ee9;
+}
+
+.search-col nz-input {
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+#footer {
+    padding: 1rem;
+    background: #ececec;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 14px;
+    text-align: center;
+}
+
+#crypto-table {
+    width: 80%;
+    margin: 0 auto 24px auto;
+    padding: 1em;
+}
+
+.ant-table-tbody > tr > td {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    cursor: pointer;
+}
+
+.table-operations {
+    margin-bottom: 16px;
+}
+
+.table-operations > button {
+    margin-right: 8px;
+}
+
+.flag img {
+    max-width: 23px;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.flag img.blur {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+}
+
+.crypto-name {
+    font-weight: bold;
+}
+
+.crypto-price, .crypto-market-cap,
+.crypto-change24, .crypto-symbol {
+    font-weight: bold;
+}
+
+.price-up {
+    background-color: #C3F1C4;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.price-down {
+    background-color: #FBDEDF;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.change24-green {
+    color: #2ac27a;
+}
+
+.change24-red {
+    color: #ff6060;
+}
+
+#focusWidth {
+    width: 220px !important;
+}
+
+@media all and (min-width: 1200px) {
+    #header {
+        height: 80px;
+    }
+
+    .search-col nz-input {
+        line-height: 112px;
+        width: 128px;
+        float: right;
+    }
+
+}
+
+@media all and (max-width: 1199px) {
+    .search-col {
+        margin-top: -12px;
+    }
+
+    .search-col nz-input {
+        width: 180px;
+    }
+
+    #focusWidth {
+        width: 260px !important;
+    }
+}
+
+@media all and (min-width: 600px) and (max-width: 800px) {
+    #logo span {
+        font-size: 1.8em;
+    }
+}
+
+@media all and (max-width: 640px) {
+    #crypto-table {
+        width: 95%;
+    }
+
+    #header {
+        width: 95%;
+    }
+}
+
+@media all and (min-width: 480px) {
+    .full-width-breakpoint {  
+        display:none;
+        line-height:0;  
+    }
+
+}
+
+@media all and (min-width: 480px) and (max-width: 599px) {
+    #logo span {
+        font-size: 1.4em;
+    }
+}
+
+@media all and (max-width: 530px) {
+    .col-4 {
+        display: none;
+    }
+}
+
+@media all and (max-width: 479px) {
+    #logo span {
+        font-size: 1.4em;
+        line-height: 18px !important;
+    }
+
+    #logo {
+        line-height: 2.4em !important;
+        margin-top: 3em;
+    }
+
+    #header {
+        height: 128px;
+    }
+
+    .search-col {
+        margin-top: -30px;
+    }
+
+    .search-col nz-input {
+        width: 140px;
+    }
+
+    #focusWidth {
+        width: 200px !important;
+    }
+}
+
+@media all and (max-width: 430px) {
+    .col-2 {
+        display: none;
+    }
+}
+
+@media all and (max-width: 359px) {
+    #logo span {
+        font-size: 1.4em;
+    }
+}
+@media all and (max-width: 355px) {
+    .col-5 {
+        display: none;
+    }
+}

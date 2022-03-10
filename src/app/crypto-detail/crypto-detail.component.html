@@ -1,0 +1,56 @@
+<div *ngIf="cryptox">
+  <nz-layout>
+    <nz-header class="clearfix" id="header">
+      <div nz-row [nzGutter]="8">
+        <div nz-col [nzXs]="3" [nzSm]="2" [nzMd]="2" [nzLg]="2">
+          <a (click)="goBack()" id="go-back">
+            <i class="anticon anticon-arrow-left"></i>
+          </a>
+        </div>
+        <div nz-col [nzXs]="12" [nzSm]="10" [nzMd]="8" [nzLg]="8">
+          <img class="coin-image" src="{{ cryptox.image }}" />
+          <span class="coin-name">{{ cryptox.name }}</span>
+        </div>
+        <div nz-col [nzXs]="8" [nzSm]="6" [nzMd]="4" [nzLg]="3" class="header-last">
+          <span class="coin-price">
+            <span class="dollar-sign">$ </span>{{ cryptox.price }}</span>
+        </div>
+      </div>
+    </nz-header>
+
+
+    <nz-content>
+
+      <div nz-row id="canvas-content">
+        <div nz-col [nzXs]="24" [nzSm]="24" [nzMd]="24" [nzLg]="24">
+          <nz-tabset [(nzSelectedIndex)]="selectedIndex" (nzSelectChange)="selectChange()">
+            <nz-tab *ngFor="let tab of tabs">
+              <ng-template #nzTabHeading>
+                {{tab.name}}
+              </ng-template>
+              <div class="canvas-container">
+                <canvas id="canvas-{{ tab.index }}">{{ tab.content }}</canvas>
+              </div>
+            </nz-tab>
+          </nz-tabset>
+        </div>
+      </div>
+
+    </nz-content>
+
+    <nz-footer class="clearfix" id="footer">
+      <div nz-row>
+        <div nz-col [nzXs]="24" [nzSm]="24" [nzMd]="24" [nzLg]="24">
+          <span>
+            © 2018
+            <a href="https://github.com/mrcotter" target="_blank" rel="noopener">
+              <i class="anticon anticon-github"></i> Kris</a>
+            Powered by
+            <a href="https://angular.io/" target="_blank" rel="noopener">Angular</a>
+          </span>
+        </div>
+      </div>
+    </nz-footer>
+  </nz-layout>
+
+</div>
